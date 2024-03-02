@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap and css file added -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css" />
+
+</head>
+<body>
+    <!-- navbar part -->
+    <section class="container max-auto">
+      <!-- part 1 -->
+      <div class="mt-2 d-flex justify-content-between">
+        <!-- logo -->
+        <div>
+          <a href="index.html">
+            <img src="imgs/logo.png" style="width: 50px" alt="logo" />
+          </a>
+        </div>
+
+        <!-- language button -->
+        <section class="d-flex ">
+            <p>বাংলা</p>
+            <div class="form-check form-switch mx-1">
+                
+                <input class="form-check-input bg-success" type="checkbox" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                
+            </div>
+            <p> English</p>
+        </section>
+
+        <!-- login reg button -->
+        <div class="d-flex">
+          <a class="nav-link active nav-link-ltr" href="#">Register</a>
+          <a class="nav-link active nav-link-ltr mx-1" href="#">Login</a>
+        </div>
+      </div>
+
+      <!-- part 2 -->
+      <div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div>
+              <!-- empty -->
+            </div>
+            <!-- collapse responsive button -->
+            <!-- data-bs-target related to id -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- id for this part -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav mx-auto">
+                <a class="nav-link active nav-link-ltr" href="index.html"
+                  >Home</a
+                >
+                <a class="nav-link active nav-link-ltr" href="#">Buy Miles</a>
+                <a class="nav-link active nav-link-ltr" href="#">Sell Miles</a>
+                <a class="nav-link active nav-link-ltr" href="#">About Us</a>
+                <a class="nav-link active nav-link-ltr" href="#"
+                  >Sell Credit
+                </a>
+                <a class="nav-link active nav-link-ltr" href="#">Blog</a>
+                <a class="nav-link active nav-link-ltr" href="#"
+                  >Sell Qantas
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- navbar part end -->
+
+    <script src="js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* navbar animation */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  color: #031D44;
+  padding: 10px 0px;
+  margin: 0px 10px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 500ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 80px;
+}
+/* navbar animation end*/
