@@ -40,3 +40,17 @@
   width: 80px;
 }
 /* navbar animation end*/
+
+.middle{
+  margin: auto;
+}
+
+.linkStyle{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.linkStyle:hover{
+  color: #81B2D3;
+}
