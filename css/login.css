@@ -1,0 +1,16 @@
+.formWidth {
+  max-width: 400px;
+  margin: auto;
+}
+
+.center-div {
+  text-align: center;
+}
+
+.back {
+  background-color: #ffffff;
+}
+
+.bodyBackground {
+  background-color: #f3f4f5;
+}

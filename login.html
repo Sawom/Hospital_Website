@@ -5,12 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
 
+    <!-- css links -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/login.css">
 
 </head>
-<body>
-    
+<body class="bodyBackground ">
+
+    <!-- navbar part -->
+    <section class="back mb-5">
+        <div class="container max-auto">
+        <!-- part 1 -->
+        <div class="mt-2 d-flex justify-content-between">
+            <!-- logo -->
+            <div>
+            <a href="index.html">
+                <img src="imgs/logo.png" style="width: 50px" alt="logo" />
+            </a>
+            </div>
+
+            <!-- language button -->
+            <div class="d-flex ">
+                <p>বাংলা</p>
+                <div class="form-check form-switch mx-1">
+                    
+                    <input class="form-check-input bg-success" type="checkbox" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    
+                </div>
+                <p> English</p>
+            </div>
+
+            <!-- login reg button -->
+            <div class="d-flex">
+            <a class="nav-link active nav-link-ltr" href="register.html">Register</a>
+            <a class="nav-link active nav-link-ltr mx-1" href="login.html">Login</a>
+            </div>
+        </div>
+
+        <!-- <marquee class="text-success" > Notification </marquee> -->
+        <!-- part 2 -->
+        <div>
+            <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div>
+                <!-- empty -->
+                </div>
+                <!-- collapse responsive button -->
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- pages -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link active nav-link-ltr" href="index.html">Home</a>
+                    <a class="nav-link active nav-link-ltr" href="#">Our service</a>
+                    <a class="nav-link active nav-link-ltr" href="#">Direction committee</a>
+                    <a class="nav-link active nav-link-ltr" href="#">Gallary</a>
+                </div>
+                </div>
+
+            </div>
+            </nav>
+        </div>
+        <marquee class="text-success" > Notification </marquee>
+        </div>
+    </section>
+    <br>
+    <!-- navbar part end -->
+
+    <!-- login form -->
+    <div class="container mx-auto mb-5">
+        
+            <div class="back p-4 formWidth" style="border-radius: 20px;">
+                <img src="imgs/logo.png" style="width: 50px;" class="mx-auto d-block" alt="">
+                <p class="center-div">নতুন একাউন্ট তৈরি করুন</p>
+                <form >
+                    <label for="contactType">একাউন্টে লগইন করার মাধ্যম: *</label>
+                    <!-- radio button -->
+                    <div class="d-flex mb-2">
+                        <div class="form-check mx-2">
+                            <input class="form-check-input border-black" type="radio" name="contactType" id="mobileRadio" value="mobile" checked>
+                            <label class="form-check-label" for="mobileRadio">মোবাইল</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input border-black" type="radio" name="contactType" id="emailRadio" value="email">
+                            <label class="form-check-label" for="emailRadio">ইমেইল</label>
+                        </div>
+                    </div>
+
+                    <!-- email or phone -->
+                    <div class="form-group mb-3">
+                        <label for="contactInput">যোগাযোগের তথ্য: *</label>
+                        <div id="mobileInput">
+                            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="আপনার মোবাইল নাম্বার ">
+                        </div>
+                        <div id="emailInput" style="display:none;">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="আপনার ইমেইল">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 mx-auto">
+                        <label for="exampleFormControlInput1" class="form-label">আপনার নাম: *</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="আপনার নাম" required>
+                        <!-- submit button -->
+                        <div class="d-grid gap-2 mb-3">
+                            <button type="submit" class="btn btn-success mt-3">লগইন করুন</button>
+                        </div>
+                    
+                        <p class="center-div">অথবা নিন্ম বর্ণিত সিস্টেমের মাধ্যমে লগইন করুন</p>
+                        <span class="center-div d-flex"> <p class="mx-2">একাউন্ট নেই?</p> <a href="register.html">রেজিষ্টেশন করুন</a>  </span> 
+                        <hr>
+                    <span> <a class="text-success mx-3">প্রশাসনিক লগইন</a> | <a class="text-success mx-3">সহায়ক লগইন</a> </span> 
+                    </div>
+                
+                </form>
+                    
+            </div>
+
+    </div>
+
+
+    <script src="js/script.js" ></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>
