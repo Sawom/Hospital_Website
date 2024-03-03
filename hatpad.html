@@ -1,150 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hatpad</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-</head>
-<body>
-    
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
     <section class="container mx-auto">
-        <br> <br>
-        <!-- top -->
-        <div>
-
-            <div class="row">
-                <div class="col-md-2 col-lg-2">
-                    <img src="imgs/logo.png" style="width: 80px;" alt="">
-                </div>
-                <div class="col-md-8 col-lg-8 mt-3">
-                    <h2>Dr. X</h2>
-                    <hr>
-                    <p>Medical Officer</p>
-                </div>
-                <div class="col-md-2 col-lg-2">
-                    <img src="imgs/qr.png" style="width: 50px;" alt="">
-                </div>
-            </div>
-
-        </div>
-        <br>
-
-        <!-- patient field -->
+      <br />
+      <br />
+      <!-- top -->
+      <div>
         <div class="row">
-            <div class="col-lg-3 col-md-3">
-                <p> Name: .................</p>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">History</label>
-                </div>
+          <div class="col-md-2 col-lg-2">
+            <img src="imgs/logo.png" style="width: 80px" alt="" />
+          </div>
+          <div class="col-md-8 col-lg-8 mt-3">
+            <h2>Dr. X</h2>
+            <h5>Title: ENT specialist (Rajshahi Medical College)</h5>
+            <h5>BMDC reg no:</h5>
+            <h5>phone no:</h5>
+            <hr />
+          </div>
+          <div class="col-md-2 col-lg-2">
+            <img src="imgs/qr.png" style="width: 50px" alt="" />
+          </div>
+        </div>
+      </div>
+      <br />
 
-                <br>
-                <div class="form-check">
-                    <input class="form-check-input border-black" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Pathology
-                    </label>
-                </div>
+      <!-- patient field -->
+      <div class="row">
+        <div class="col-lg-3 col-md-3">
+          <!-- name -->
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Name</label>
+          </div>
+          <br />
+          <!-- history -->
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">History</label>
+          </div>
 
-                <div class="form-check">
-                    <input class="form-check-input border-black" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Radiology
-                    </label>
-                </div>
+          <br />
+          <div class="form-check">
+            <input
+              class="form-check-input border-black"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Pathology
+            </label>
+          </div>
 
-                <br>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Advice</label>
-                </div>
+          <div class="form-check">
+            <input
+              class="form-check-input border-black"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Radiology
+            </label>
+          </div>
 
-                <br>
-                <!-- add medicine -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <br />
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">Advice</label>
+          </div>
+
+          <br />
+          <!-- add medicine -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Add Medicine
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
                     Add Medicine
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Medicine</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-  
-                            <!-- search & medicine type -->
-                            <input type="text" placeholder="search type" class="form-control mb-2" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>medicine type</option>
-                                <option value="1">capsule</option>
-                                <option value="2">crim</option>
-                                <option value="3">ointment</option>
-                                <option value="4">syrup</option>
-                                <option value="5">capsule</option>
-                            </select>
-
-                            <!-- medicine name -->
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Medicine Name</label>
-                            </div>
-
-                            <!-- medicine doses -->
-                            <input type="text" placeholder="Medicine doses" class="form-control mb-2" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <select class="form-select mb-3" aria-label="Default select example">
-                                <option selected>Medicine doses</option>
-                                <option value="1">1+1+1</option>
-                                <option value="2">1+0+1</option>
-                                <option value="3">1+0+0</option>
-                            </select>
-
-                            <!-- continue days -->
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">continue days</label>
-                            </div>
-
-                            <!-- how to take -->
-                            <input type="text" placeholder="How to Use Medicine" class="form-control mb-2" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <select class="form-select mb-3" aria-label="Default select example">
-                                <option selected>How to Use Medicine</option>
-                                <option value="1">Before meal</option>
-                                <option value="2">After meal</option>
-                            </select>
-
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                    </div>
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
+                <div class="modal-body">
+                  <form action="">
+                    <!-- search & medicine type -->
+                    <input
+                      type="text"
+                      placeholder="search type"
+                      class="form-control mb-2"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>medicine type</option>
+                      <option value="1">capsule</option>
+                      <option value="2">crim</option>
+                      <option value="3">ointment</option>
+                      <option value="4">syrup</option>
+                      <option value="5">capsule</option>
+                    </select>
+
+                    <!-- medicine name -->
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Medicine Name</label>
+                    </div>
+
+                    <!-- medicine doses -->
+                    <input
+                      type="text"
+                      placeholder="Medicine doses"
+                      class="form-control mb-2"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <select
+                      class="form-select mb-3"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Medicine doses</option>
+                      <option value="1">1+1+1</option>
+                      <option value="2">1+0+1</option>
+                      <option value="3">1+0+0</option>
+                    </select>
+
+                    <!-- continue days -->
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">continue days</label>
+                    </div>
+
+                    <!-- how to take -->
+                    <input
+                      type="text"
+                      placeholder="How to Use Medicine"
+                      class="form-control mb-2"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <select
+                      class="form-select mb-3"
+                      aria-label="Default select example"
+                    >
+                      <option selected>How to Use Medicine</option>
+                      <option value="1">Before meal</option>
+                      <option value="2">After meal</option>
+                    </select>
+                  </form>
                 </div>
-
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
             </div>
-
-            <div class="col-lg-3 col-md-3">
-                <p>Age: .................</p>
-            </div>
-
-            <div class="col-lg-3 col-md-3">
-                <p>Sex: .................</p>
-            </div>
-
-            <div class="col-lg-3 col-md-3">
-                <p>Date: .................</p>
-            </div>
+          </div>
         </div>
 
+        <div class="col-lg-3 col-md-3">
+          <!-- age -->
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Age</label>
+          </div>
+        </div>
 
+        <div class="col-lg-3 col-md-3">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Sex</label>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Date</label>
+          </div>
+
+          <!-- rafffffff -->
+          <section>
+            
+            <ul class="list-group">
+                <b class="list-group-item">An item</b>
+                
+                <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"> 
+                    <i class="fa-solid fa-magnifying-glass"></i> </span>
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Username"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    />
+                </div>
+
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A fourth item</li>
+              <li class="list-group-item">And a fifth one</li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </section>
 
-    <script src="js/bootstrap.bundle.min.js" ></script>
-</body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

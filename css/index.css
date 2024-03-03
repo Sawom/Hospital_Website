@@ -54,3 +54,12 @@
 .linkStyle:hover{
   color: #81B2D3;
 }
+
+li:hover {
+    cursor:pointer;
+
+}
+
+.zerro{
+  border-radius: 0%;
+}
