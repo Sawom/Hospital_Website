@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+    <!-- navbar part -->
+    <section class="back mb-5">
+        <div class="container max-auto">
+        <!-- part 1 -->
+        <div class="mt-2 d-flex justify-content-between">
+            <!-- logo -->
+            <div>
+            <a href="index.html">
+                <img src="imgs/logo.png" style="width: 50px" alt="logo" />
+            </a>
+            </div>
+
+            <!-- language button -->
+            <div class="d-flex ">
+                <p>বাংলা</p>
+                <div class="form-check form-switch mx-1">
+                    
+                    <input class="form-check-input bg-success" type="checkbox" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    
+                </div>
+                <p> English</p>
+            </div>
+
+            <!-- login reg button -->
+            <div class="d-flex">
+            <a class="nav-link active nav-link-ltr" href="register.html">Register</a>
+            <a class="nav-link active nav-link-ltr mx-1" href="login.html">Login</a>
+            </div>
+        </div>
+
+        <!-- <marquee class="text-success" > Notification </marquee> -->
+        <!-- part 2 -->
+        <div>
+            <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div>
+                <!-- empty -->
+                </div>
+                <!-- collapse responsive button -->
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- pages -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link active nav-link-ltr" href="index.html">Home</a>
+                    <a class="nav-link active nav-link-ltr" href="#">Our service</a>
+                    <a class="nav-link active nav-link-ltr" href="directors.html">Direction committee</a>
+                    <a class="nav-link active nav-link-ltr" href="#">Gallary</a>
+                </div>
+                </div>
+
+            </div>
+            </nav>
+        </div>
+        <marquee class="text-success" > Notification </marquee>
+        </div>
+    </section>
+    <!-- navbar part end -->
+
+
+    <!-- ambulance details -->
+    <section class="container mx-auto" >
+        <h3 class="text-center">All Services</h3>
+        <br>
+
+        <!-- 1 -->
+        <div class="card h-100 mb-3" >
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="imgs/ambulance1.jpg" class="img-fluid h-100 rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title"> Ambulance Service</h5>
+                    <!-- table -->
+                    <p class="card-text"> 
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Ambulance Type</th>
+                                    <th scope="col">Price (BDT) </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AC</td>
+                                    <td>2500</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Non AC</td>
+                                    <td>2000</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </p>
+                    <a href="seeMore.html">
+                        <button class="btn btn-success btn-sm"> see more </button> 
+                    </a>
+                    
+                </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card h-100 mb-3" >
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="imgs/ambulance2.jpg" class="img-fluid h-100 rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Ac ambulance 102</h5>
+                    <p class="card-text"> <b>Type:</b> 
+                        <br>
+                        <b>Contact Number:</b>
+                        <br> 
+                        <b>Rate: BDT</b> 
+                    </p>
+                    <button class="btn btn-success btn-sm"> Booking Now </button> 
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+   
+    <script src="js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
