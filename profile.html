@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap and css file added -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+<body >
+    <!-- navbar part -->
+    <section class="back ">
+        <div class="container max-auto">
+        <!-- part 1 -->
+        <div class="mt-2 d-flex justify-content-between">
+            <!-- logo -->
+            <div>
+            <a href="index.html">
+                <img src="imgs/logo.png" style="width: 50px" alt="logo" />
+            </a>
+            </div>
+
+            <!-- language button -->
+            <div class="d-flex ">
+                <p>বাংলা</p>
+                <div class="form-check form-switch mx-1">
+                    
+                    <input class="form-check-input bg-success" type="checkbox" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    
+                </div>
+                <p> English</p>
+            </div>
+
+            <!-- login reg button -->
+            <div class="d-flex">
+            <a class="nav-link active nav-link-ltr" href="profile.html">Profile</a>
+            <a class="nav-link active nav-link-ltr mx-1" href="login.html">Login</a>
+            </div>
+        </div>
+
+        <!-- <marquee class="text-success" > Notification </marquee> -->
+        <!-- part 2 -->
+        <div>
+            <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div>
+                <!-- empty -->
+                </div>
+                <!-- collapse responsive button -->
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- pages -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link active nav-link-ltr" href="index.html">Home</a>
+                    <a class="nav-link active nav-link-ltr" href="#">Our service</a>
+                    <a class="nav-link active nav-link-ltr" href="directors.html">Direction committee</a>
+                    <a class="nav-link active nav-link-ltr" href="#">Gallary</a>
+                </div>
+                </div>
+
+            </div>
+            </nav>
+        </div>
+        <marquee class="text-success" > Notification </marquee>
+        </div>
+    </section>
+    <!-- navbar part end -->    
+
+    <!-- profile section -->
+    <section class="mb-4">
+
+        <div class="row  container mx-auto g-2">
+                <!-- 1st column -->
+                <div class="col-12 col-lg-3 col-md-3 back mx-2 p-3" >
+
+                    <!-- image -->
+                    <div class="avatar-container mb-3">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="Avatar" class="avatar-img">
+                        <input type="file" class="avatar-input" id="avatarInput" onchange="loadImage(event)">
+                        <i onclick="document.getElementById('avatarInput').click()"> 
+                            <img class="camera-icon" src="imgs/icons/camera.png" alt="">
+                        </i>
+                    </div>
+
+                    <div class="text-center">
+                        <p >মোঃ শরিফুল ইসলাম <i class="fa-solid fa-circle-check" style="color: blue;"></i></p>
+                        <p> 01511205150 </p>
+                    </div>
+                    <p style="border-radius: 10px;" class="bg-success text-white p-1 text-center" > অ্যাকাউন্ট</p>
+                    <br>
+                    
+                    <h6>ভেরিফিকেশন</h6>
+                    <br>
+                        
+                    <p class="d-flex" >
+                        <img src="imgs/id.svg" style="width: 15px;" alt="">
+                        <span class="mx-3">জাতীয় পরিচয়পত্র</span> 
+                        <img src="imgs/tik.svg" style="width: 15px;" ></img>
+                    </p>
+                    
+                    <h6>প্রোফাইল ডাটা যাচাই</h6>
+                    <br>
+                    <div class="">
+                        
+                        <p class="d-flex" > 
+                            <img src="imgs/id.svg" style="width: 15px;" alt="">
+                            <span class="mx-3">জন্ম নিবন্ধন নম্বর</span> 
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                যাচাই করুন
+                            </button>
+                        </p>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">জন্ম নিবন্ধনের তথ্য</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-3">
+                                
+                                <!-- 1 name -->
+                                <div class="">
+                                    <label for="inputName4"> নাম</label>
+                                    <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputName4"
+                                    placeholder="নাম"
+                                    />
+                                </div>
+                                <br>
+
+                                <!-- 2 dob -->
+                                <div class="">
+                                    <label for="inputName4"> জন্ম তারিখ</label>
+                                    <input
+                                    type="date"
+                                    class="form-control"
+                                    id="inputName4"
+                                    placeholder="জন্ম তারিখ"
+                                    />
+                                </div>
+                                <br>
+
+                                <!-- 3 birth certificate no-->
+                                <div class="">
+                                    <label for="inputName4"> জন্ম নিবন্ধন নম্বর</label>
+                                    <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputName4"
+                                    placeholder="জন্ম নিবন্ধন নম্বর"
+                                    />
+                                </div>
+
+
+                            </div>
+
+                            <!-- button -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">যাচাই করুন</button>
+                            </div>
+
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <!-- tin -->
+                    <p> <span class="mx-2">টিআইএন</span> <img src="imgs/tik.svg" style="width: 15px;" ></img></p>
+                    <br>
+
+                    <!-- documents -->
+                    <div class="">
+                        <select id="inputState" class="form-select">
+                            <option selected>  <span>ডকুমেন্টস</span> </option>
+                            <option > <span> ডকুমেন্ট </span> </option>
+                            <option> <span>ডকুমেন্টস আপলোড</span> </option>
+                        </select>
+                    </div>   
+                    <br>
+
+                    <!-- settings -->
+                    <div class="">
+                        <select id="inputState" class="form-select">
+                            <option selected>সেটিংস</option>
+                            <option >পাসওয়ার্ড পরিবর্তন</option>
+                            <option>বিকল্প মোবাইল নম্বর/ ইমেইল এড্রেস যুক্ত করুন</option>
+                        </select>
+                    </div> 
+
+                    <br>
+                    <!-- stats -->
+                    <div>
+                        <p>চলমান প্রজেক্ট: </p>
+                        <p>কমপ্লিট প্রজেক্ট: </p>
+                        <p>ক্যান্সেল প্রজেক্ট: </p>
+                        <p>মোট পেমেন্ট: </p>
+                        <p>বাকি পেমেন্ট: </p>
+                        <p>আবেদন প্রক্রিয়াধীন: </p>
+                    </div>
+
+
+                </div>
+
+                <!-- 2nd column -->
+                <div class="col-12 col-lg-8 col-md-8 back p-3">
+                    <h3>প্রোফাইল</h3>
+                    <br>
+                    <!-- form -->
+                    <form action="">
+                        <div class="row g-4">
+
+                            <!-- 1 name -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> নাম</label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="নাম"
+                                />
+                            </div>
+
+                            <!-- 2 name english -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4">নাম (ইংরেজি)</label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="আপনার নাম (ইংরেজি)"
+                                />
+                            </div>
+
+                            <!-- 3 father name -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> পিতার নাম </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="পিতার নাম"
+                                />
+                            </div>
+
+                            <!-- 4 father name english -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4">পিতার নাম (ইংরেজি)</label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="পিতার নাম (ইংরেজি)"
+                                />
+                            </div>
+
+                            <!-- 5 father name -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> মাতার নাম </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="মাতার নাম"
+                                />
+                            </div>
+
+                            <!-- 6 father name english -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4">মাতার নাম (ইংরেজি)</label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="মাতার  নাম (ইংরেজি)"
+                                />
+                            </div>
+
+                            <!-- 7 husband/wife name -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> স্বামী/স্ত্রীর নাম </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="স্বামী/স্ত্রীর নাম"
+                                />
+                            </div>
+
+                            <!-- 8 husband/wife english -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4">স্বামী/স্ত্রীর নাম (ইংরেজি)</label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="স্বামী/স্ত্রীর নাম"
+                                />
+                            </div>
+
+                            <!-- 9 dob -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> জন্ম তারিখ </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="জন্ম তারিখ"
+                                />
+                            </div>
+
+                            <!-- 10 religious -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> ধর্ম </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="জন্ম তারিখ"
+                                />
+                            </div>
+
+                            <!-- 11 gender -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> লিঙ্গ </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="লিঙ্গ"
+                                />
+                            </div>
+
+                            <!-- 12 nid no -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> জাতীয় পরিচয়পত্র নম্বর </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder=" নম্বর (ইংরেজি)"
+                                />
+                            </div>
+
+                            <!-- 13 occupation -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> পেশা </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="পেশা"
+                                />
+                            </div>
+
+                            <!-- 14 nationality -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> জাতীয়তা </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="জাতীয়তা"
+                                />
+                            </div>
+
+                            <!-- 15 tin -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> টিআইএন </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="টিআইএন"
+                                />
+                            </div>
+
+                            <!-- 16 birth certificate no -->
+                            <div class="col-md-6 col-lg-6">
+                                <label for="inputName4"> জন্ম নিবন্ধন নম্বর </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="জন্ম নিবন্ধন নম্বর"
+                                />
+                            </div>
+
+                        </div>
+
+                        <br>
+                        <!-- 17 present address -->
+                        <div>
+                            <div class="col">
+                                <label for="inputName4"> বর্তমান ঠিকানা </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="বর্তমান ঠিকানা"
+                                />
+                            </div>
+
+                            <br>
+                            <div class="row g-4">
+                                <div class="row g-3 mt-1">
+
+                                    <!-- division -->
+                                    <div class="form-group col-md-4 col-lg-4">
+                                        <label for="inputState"> বিভাগ </label>
+                                        <select id="inputState" class="form-select">
+                                        <option selected> নির্বাচন করুন </option>
+                                        <option> ঢাকা </option>
+                                        </select>
+                                    </div>
+
+                                    <!-- jela -->
+                                    <div class="form-group col-md-4 col-lg-4">
+                                        <label for="inputState"> জেলা  </label>
+                                        <select id="inputState" class="form-select">
+                                        <option selected> নির্বাচন করুন </option>
+                                        <option> ঢাকা </option>
+                                        </select>
+                                    </div>
+
+                                    <!-- upojela -->
+                                    <div class="form-group col-md-4 col-lg-4">
+                                        <label for="inputState">উপজেলা </label>
+                                        <select id="inputState" class="form-select">
+                                        <option selected> নির্বাচন করুন </option>
+                                        <option> ঢাকা </option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <br>
+                        <!-- permanent address -->
+                        <div>
+                            <div class="col">
+                                <label for="inputName4"> স্থায়ী ঠিকানা </label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="inputName4"
+                                placeholder="স্থায়ী ঠিকানা"
+                                />
+                            </div>
+
+                            <br>
+                            <div class="row g-4">
+                                <div class="row g-3 mt-1">
+                                    <!-- division -->
+                                    <div class="form-group col-md-4 col-lg-4">
+                                        <label for="inputState"> বিভাগ </label>
+                                        <select id="inputState" class="form-select">
+                                        <option selected> নির্বাচন করুন </option>
+                                        <option> ঢাকা </option>
+                                        </select>
+                                    </div>
+
+                                    <!-- jela -->
+                                    <div class="form-group col-md-4 col-lg-4">
+                                        <label for="inputState"> জেলা  </label>
+                                        <select id="inputState" class="form-select">
+                                        <option selected> নির্বাচন করুন </option>
+                                        <option> ঢাকা </option>
+                                        </select>
+                                    </div>
+
+                                    <!-- upojela -->
+                                    <div class="form-group col-md-4 col-lg-4">
+                                        <label for="inputState">উপজেলা </label>
+                                        <select id="inputState" class="form-select">
+                                        <option selected> নির্বাচন করুন </option>
+                                        <option> ঢাকা </option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <br>
+                    <button class="btn btn-success"  > হালনাগাদ </button>
+                    
+                </div>
+
+        </div>
+
+    </section>
+    <!-- profile section end -->
+
+    <script src="js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
