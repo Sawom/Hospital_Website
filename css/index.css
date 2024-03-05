@@ -63,3 +63,23 @@ li:hover {
 .zerro{
   border-radius: 0%;
 }
+
+
+/* round img */
+.avatar-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  margin: auto;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
