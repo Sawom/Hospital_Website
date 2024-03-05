@@ -1,17 +1,17 @@
 /* navbar animation */
 .navbar-toggler:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
-.navbar-toggler{
-    border: none;
+.navbar-toggler {
+  border: none;
 }
 
 .nav-link {
   font-weight: bold;
   font-size: 16px;
   text-decoration: none;
-  color: #031D44;
+  color: #031d44;
   padding: 12px 0px;
   margin: 0px 10px;
   display: inline-block;
@@ -28,7 +28,7 @@
   height: 5px;
   content: "";
   position: absolute;
-  background-color: #031D44;
+  background-color: #031d44;
 }
 
 .nav-link-ltr::before {
@@ -41,29 +41,27 @@
 }
 /* navbar animation end*/
 
-.middle{
+.middle {
   margin: auto;
 }
 
-.linkStyle{
+.linkStyle {
   text-decoration: none;
   color: black;
   font-weight: bolder;
 }
 
-.linkStyle:hover{
-  color: #81B2D3;
+.linkStyle:hover {
+  color: #81b2d3;
 }
 
 li:hover {
-    cursor:pointer;
-
+  cursor: pointer;
 }
 
-.zerro{
+.zerro {
   border-radius: 0%;
 }
-
 
 /* round img */
 .avatar-container {
@@ -82,4 +80,14 @@ li:hover {
   height: 100%;
   object-fit: cover;
   cursor: pointer;
+}
+
+.linkStyle {
+  text-decoration: none;
+  color: white;
+}
+
+.linkStyle2 {
+  text-decoration: none;
+  color: white;
 }
